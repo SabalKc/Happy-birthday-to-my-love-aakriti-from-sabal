@@ -76,6 +76,11 @@ function enterHeart() {
     }, 800);
 }
 
+
+/* =========================
+   MAIN LOVE LETTER
+========================= */
+
 function showMainPage() {
     const main = document.createElement("main");
 
@@ -107,13 +112,13 @@ function showMainPage() {
                 <p>And will make no more mistakes.</p>
 
                 <p>Through every smile and every tear,</p>
-                <p>I'll be right beside you, year after year,</p>
+                <p>I'll be right beside you, year after year.</p>
 
                 <p>Through every storm, through every rain,</p>
                 <p>I'll choose you over and over again.</p>
 
                 <p>You're the little peace my heart wants to keep,</p>
-                <p>The sweetest thought that follows me to sleep,</p>
+                <p>The sweetest thought that follows me to sleep.</p>
 
                 <p>And if tomorrow brings a brand-new view,</p>
                 <p>I'd still find my way back to you. 💖</p>
@@ -121,6 +126,7 @@ function showMainPage() {
             </div>
 
             <div class="poem-ending">
+
                 <p>
                     And NOWWWW... hope U like that 💖💖
                 </p>
@@ -128,11 +134,25 @@ function showMainPage() {
                 <button id="kabitaButton">
                     ABA KABITA SURU GARCHU 😎❤️
                 </button>
+
             </div>
 
         </div>
     `;
-    function showKabita() {
+
+    document.body.appendChild(main);
+
+    document
+        .getElementById("kabitaButton")
+        .addEventListener("click", showKabita);
+}
+
+
+/* =========================
+   NEPALI KABITA
+========================= */
+
+function showKabita() {
     const main = document.querySelector(".main-page");
 
     main.innerHTML = `
@@ -149,40 +169,51 @@ function showMainPage() {
             <div class="poem nepali-poem">
 
                 <p>Bihanw utxu timro yaadh aauxa,</p>
-                <p>Maya timro yaadh le nikai satauxa,</p>
+
+                <p>Maya timro yaadh le nikai satauxa.</p>
 
                 <p>Timi meri Aakriti nai hau,</p>
+
                 <p>Basxau timi nikai tada hau,</p>
+
                 <p>Basxau timi nikai tada hau.</p>
 
-                <p>Sansar yo duemukhi, vanne yeuta garne yeuta garxan,</p>
-                <p>Sabal hun yesto pradi, timro lagi sacchi jyanai dinxan. 🤣</p>
+                <p>
+                    Sansar yo duemukhi, vanne yeuta garne yeuta garxan,
+                </p>
+
+                <p>
+                    Sabal hun yesto pradi, timro lagi sacchi jyanai dinxan. 🤣
+                </p>
 
                 <p>Timro muskan le mero din sajauxa,</p>
+
                 <p>Timro ek nazar le mutu nai ramauxa,</p>
+
                 <p>Timi xau ra ta yo man le maya bujhxa,</p>
+
                 <p>Timi bina yo mutu kata kata harauxa.</p>
 
                 <p>Tada xau timi, tara mutu mai xau,</p>
+
                 <p>Mero harek sochma timi nai xau,</p>
+
                 <p>Jindagi le jata tira lagos malai,</p>
-                <p>Mero man le rojney chai timi nai hau. ❤️😭</p>
+
+                <p>
+                    Mero man le rojney chai timi nai hau. ❤️😭
+                </p>
 
             </div>
 
         </div>
     `;
-    }
-
-    document.body.appendChild(main);
-
-    document
-        .getElementById("kabitaButton")
-        .addEventListener("click", showKabita);
 }
 
-    document.body.appendChild(main);
-}
+
+/* =========================
+   LITTLE HEARTS
+========================= */
 
 function createTinyHeart() {
     const heart = document.createElement("span");
@@ -206,6 +237,11 @@ function createTinyHeart() {
         heart.remove();
     }, 900);
 }
+
+
+/* =========================
+   EXPLOSION HEARTS
+========================= */
 
 function createExplosionHeart() {
     const heart = document.createElement("span");
