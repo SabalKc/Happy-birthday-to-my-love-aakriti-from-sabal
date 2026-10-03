@@ -288,7 +288,7 @@ function showFinalMessage() {
     const main = document.querySelector(".main-page");
 
     main.innerHTML = `
-        <div class="love-letter">
+        <div class="love-letter final-letter">
 
             <div class="small-label">
                 ONE LAST THING ❤️
@@ -298,17 +298,106 @@ function showFinalMessage() {
                 For You, Aakriti
             </h1>
 
-            <div class="poem">
+            <div class="final-message-card">
 
-                <p>
-                    You reached the end,
+                <p class="final-opening">
+                    You reached the end...
                     but I still have a thousand
-                    things I could say...
+                    things I could say. 🥹
                 </p>
 
                 <p>
+                    This little website may just be made
+                    of code, pixels and a ridiculous amount
+                    of time...
+                </p>
+
+                <p>
+                    But every word inside it came from
+                    somewhere much more real. ❤️
+                </p>
+
+                <p>
+                    I wanted to make something that wasn't
+                    just another birthday message.
+                </p>
+
+                <p>
+                    Something you could open one day
+                    and remember how young, stupid,
+                    and ridiculously creative we were. 😂
+                </p>
+
+                <p class="final-promise">
                     And once againnn...
-                    HAPPY BIRTHDAYYY MUTU 🫀
+                </p>
+
+                <h2>
+                    HAPPY BIRTHDAYYY MUTU 🫀🎂
+                </h2>
+
+                <div class="birthday-emojis">
+                    💖 🌹 🫶 ✨ 🎂 💐 💗
+                </div>
+
+            </div>
+
+            <div class="memory-transition">
+
+                <p>
+                    But wait...
+                </p>
+
+                <h2>
+                    I have something else for you. 👀
+                </h2>
+
+                <button id="memoryButton">
+                    WAIT... THERE'S MORE 📸
+                </button>
+
+            </div>
+
+        </div>
+    `;
+
+    document
+        .getElementById("memoryButton")
+        .addEventListener("click", showMemories);
+}
+function showMemories() {
+    const main = document.querySelector(".main-page");
+
+    main.innerHTML = `
+        <div class="love-letter memory-page">
+
+            <div class="small-label">
+                LITTLE MEMORIES 📸
+            </div>
+
+            <h1 class="poem-title">
+                Some moments deserve
+                to be remembered. ❤️
+            </h1>
+
+            <p class="diary-note">
+                This part is still waiting
+                for our memories...
+            </p>
+
+            <div class="photo-placeholder">
+
+                <div class="placeholder-icon">
+                    📸
+                </div>
+
+                <h2>
+                    Our memories go here
+                </h2>
+
+                <p>
+                    Photos, moments, inside jokes...
+                    we'll fill this part together.
                 </p>
 
             </div>
@@ -316,7 +405,6 @@ function showFinalMessage() {
         </div>
     `;
 }
-
 /* =========================
    LITTLE HEARTS
 ========================= */
