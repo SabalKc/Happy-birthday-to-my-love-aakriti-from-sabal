@@ -169,13 +169,10 @@ function showKabita() {
             <div class="poem nepali-poem">
 
                 <p>Bihanw utxu timro yaadh aauxa,</p>
-
                 <p>Maya timro yaadh le nikai satauxa.</p>
 
                 <p>Timi meri Aakriti nai hau,</p>
-
                 <p>Basxau timi nikai tada hau,</p>
-
                 <p>Basxau timi nikai tada hau.</p>
 
                 <p>
@@ -187,29 +184,106 @@ function showKabita() {
                 </p>
 
                 <p>Timro muskan le mero din sajauxa,</p>
-
-                <p>Timro ek nazar le mutu nai ramauxa,</p>
+                <p>Timro ek nazar le mutu nai ramauxa.</p>
 
                 <p>Timi xau ra ta yo man le maya bujhxa,</p>
-
                 <p>Timi bina yo mutu kata kata harauxa.</p>
 
                 <p>Tada xau timi, tara mutu mai xau,</p>
-
-                <p>Mero harek sochma timi nai xau,</p>
+                <p>Mero harek sochma timi nai xau.</p>
 
                 <p>Jindagi le jata tira lagos malai,</p>
-
                 <p>
                     Mero man le rojney chai timi nai hau. ❤️😭
                 </p>
 
             </div>
 
+            <div class="humor-transition">
+
+                <div class="small-label">
+                    OKAY... ENOUGH EMOTIONAL SABAL 😂
+                </div>
+
+                <h2>
+                    Now let the idiot return. 🗿
+                </h2>
+
+                <p>
+                    Because obviously I couldn't make a whole
+                    website without annoying you a little. 😭
+                </p>
+
+                <button id="humorButton">
+                    SABAL'S HUMOR IS BACK 😂
+                </button>
+
+            </div>
+
         </div>
     `;
-}
 
+    document
+        .getElementById("humorButton")
+        .addEventListener("click", showHumor);
+}
+function showHumor() {
+    const main = document.querySelector(".main-page");
+
+    main.innerHTML = `
+        <div class="love-letter humor-section">
+
+            <div class="small-label">
+                SABAL'S HUMOR BACK 😂
+            </div>
+
+            <h1 class="poem-title">
+                Aakriti, meine baddie 😎
+            </h1>
+
+            <div class="humor-card">
+
+                <p>
+                    “You're gorgeous.
+                    Unfortunately, you know it.” 💀
+                </p>
+
+                <p>
+                    “You somehow manage to live
+                    in my head rent-free.”
+                </p>
+
+                <p>
+                    “Your attitude deserves
+                    its own warning label.” 😂
+                </p>
+
+                <p>
+                    “And somehow...
+                    I still adore you.” ❤️
+                </p>
+
+            </div>
+
+            <div class="poem-ending">
+
+                <p>
+                    Okay okay... flirting quota complete. 😭
+                </p>
+
+                <button id="messageButton">
+                    THERE'S MORE... 🫶
+                </button>
+
+            </div>
+
+        </div>
+    `;
+
+    document
+        .getElementById("messageButton")
+        .addEventListener("click", showFinalMessage);
+}
 
 /* =========================
    LITTLE HEARTS
