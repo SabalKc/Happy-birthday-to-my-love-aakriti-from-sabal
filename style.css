@@ -880,3 +880,179 @@ p {
 
     font-size: clamp(1rem, 4vw, 1.2rem);
 }
+
+/* =====================================
+   FINAL LETTER
+===================================== */
+
+.final-letter {
+    padding-bottom: 100px;
+}
+
+.final-message-card {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    padding: 35px 25px;
+
+    border-radius: 30px;
+
+    background:
+        rgba(255, 255, 255, 0.055);
+
+    border:
+        1px solid rgba(255, 190, 220, 0.2);
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.25);
+
+    backdrop-filter: blur(12px);
+}
+
+.final-message-card p {
+    margin-bottom: 25px;
+
+    line-height: 1.8;
+
+    color: #ffe5f0;
+
+    font-size: clamp(1rem, 4vw, 1.2rem);
+}
+
+.final-message-card .final-opening {
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
+
+    color: #ffc8df;
+}
+
+.final-message-card .final-promise {
+    margin-top: 40px;
+
+    margin-bottom: 10px;
+}
+
+.final-message-card h2 {
+    font-size: clamp(1.7rem, 7vw, 3rem);
+
+    margin-bottom: 20px;
+
+    color: #ffd2e5;
+
+    text-shadow:
+        0 0 25px rgba(255, 170, 210, 0.35);
+}
+
+.birthday-emojis {
+    font-size: 1.7rem;
+
+    letter-spacing: 5px;
+
+    line-height: 2;
+}
+
+
+/* =====================================
+   MEMORY TRANSITION
+===================================== */
+
+.memory-transition {
+    margin-top: 70px;
+
+    padding: 35px 25px;
+
+    border-radius: 28px;
+
+    background:
+        rgba(255, 255, 255, 0.035);
+
+    border:
+        1px solid rgba(255, 190, 220, 0.12);
+}
+
+.memory-transition p {
+    color: #eeb4ce;
+
+    font-style: italic;
+
+    font-size: 1.1rem;
+}
+
+.memory-transition h2 {
+    margin: 12px 0 28px;
+
+    color: #ffd7e7;
+
+    font-size: clamp(1.5rem, 6vw, 2.3rem);
+}
+
+#memoryButton {
+    border: none;
+
+    padding: 16px 26px;
+
+    border-radius: 999px;
+
+    font-weight: bold;
+
+    color: #5a173f;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffd9e9,
+            #ffb9d7
+        );
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+#memoryButton:hover {
+    transform: scale(1.05);
+
+    box-shadow:
+        0 0 35px rgba(255, 170, 210, 0.5);
+}
+
+
+/* =====================================
+   MEMORY PAGE
+===================================== */
+
+.photo-placeholder {
+    max-width: 650px;
+
+    margin: 40px auto;
+
+    padding: 50px 25px;
+
+    border-radius: 30px;
+
+    border:
+        1px dashed rgba(255, 190, 220, 0.3);
+
+    background:
+        rgba(255, 255, 255, 0.035);
+}
+
+.placeholder-icon {
+    font-size: 5rem;
+
+    margin-bottom: 20px;
+}
+
+.photo-placeholder h2 {
+    color: #ffd6e7;
+
+    margin-bottom: 12px;
+}
+
+.photo-placeholder p {
+    color: #e8bdd0;
+
+    line-height: 1.7;
+}
