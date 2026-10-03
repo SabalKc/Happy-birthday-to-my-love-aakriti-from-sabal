@@ -284,6 +284,38 @@ function showHumor() {
         .getElementById("messageButton")
         .addEventListener("click", showFinalMessage);
 }
+function showFinalMessage() {
+    const main = document.querySelector(".main-page");
+
+    main.innerHTML = `
+        <div class="love-letter">
+
+            <div class="small-label">
+                ONE LAST THING ❤️
+            </div>
+
+            <h1 class="poem-title">
+                For You, Aakriti
+            </h1>
+
+            <div class="poem">
+
+                <p>
+                    You reached the end,
+                    but I still have a thousand
+                    things I could say...
+                </p>
+
+                <p>
+                    And once againnn...
+                    HAPPY BIRTHDAYYY MUTU 🫀
+                </p>
+
+            </div>
+
+        </div>
+    `;
+}
 
 /* =========================
    LITTLE HEARTS
