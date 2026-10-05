@@ -1653,3 +1653,157 @@ p {
         width: 80%;
     }
 }
+
+/* =========================
+   TEDDY FINAL QUESTION
+========================= */
+
+.teddy-section {
+    margin-top: 60px;
+    padding: 35px 20px;
+    text-align: center;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.teddy-bear {
+    font-size: 90px;
+    display: inline-block;
+    animation: teddyFloat 2.5s ease-in-out infinite;
+    position: relative;
+    z-index: 2;
+}
+
+.teddy-section h2 {
+    margin: 20px 0;
+    font-size: 26px;
+}
+
+.vote-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.vote-buttons button {
+    border: none;
+    padding: 13px 28px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+#yesButton {
+    background: #ff5c9a;
+    color: white;
+    box-shadow: 0 8px 20px rgba(255, 92, 154, 0.35);
+}
+
+#yesButton:hover {
+    transform: scale(1.08);
+}
+
+#noButton {
+    background: white;
+    color: #ff4f87;
+    border: 2px solid #ff8db6;
+}
+
+#noButton:hover {
+    transform: scale(1.05);
+}
+
+#yesButton:disabled,
+#noButton:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.vote-response {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.7;
+    animation: votePop 0.5s ease;
+}
+
+.teddy-happy {
+    animation: teddyHappy 0.5s ease-in-out infinite alternate;
+}
+
+.teddy-heart {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    font-size: 22px;
+    pointer-events: none;
+    animation: teddyHeartFloat 1.4s ease forwards;
+}
+
+.signature {
+    margin-top: 60px;
+    padding: 25px;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+
+/* =========================
+   TEDDY ANIMATIONS
+========================= */
+
+@keyframes teddyFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes teddyHappy {
+    from {
+        transform: rotate(-6deg) scale(1);
+    }
+
+    to {
+        transform: rotate(6deg) scale(1.12);
+    }
+}
+
+@keyframes votePop {
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes teddyHeartFloat {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(0.7);
+    }
+
+    100% {
+        opacity: 0;
+        transform:
+            translate(var(--tx), var(--ty))
+            scale(1.3);
+    }
+}
