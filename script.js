@@ -194,10 +194,56 @@ function showKabita() {
 
                 <p>Jindagi le jata tira lagos malai,</p>
                 <p>
-                    Mero man le rojney chai timi nai hau. ❤️😭
-                </p>
+                <p>Mero man le rojney chai timi nai hau. ❤️😭</p>
 
-            </div>
+</div>
+
+<div class="memory-section">
+
+    <h2>A Few Little Memories 📸❤️</h2>
+
+    <p class="memory-intro">
+        A few pictures of the girl who somehow
+        became one of my favorite parts of life. 🫶
+    </p>
+
+    <div class="memory-gallery">
+
+        <div class="memory-card">
+            <img src="IMG_20261005_191834.jpg" alt="Aakriti">
+            <p>That beautiful face I could never get tired of seeing. 💗</p>
+        </div>
+
+        <div class="memory-card">
+            <img src="IMG_20261005_191714.jpg" alt="Aakriti">
+            <p>Okay... how are you this cute? 😭</p>
+        </div>
+
+        <div class="memory-card">
+            <img src="IMG_20261005_191645.jpg" alt="Aakriti">
+            <p>Another little memory worth keeping forever. 🌸</p>
+        </div>
+
+        <div class="memory-card">
+            <img src="file_00000000e9e481f41f044eb3b7b67ac.png" alt="Aakriti">
+            <p>My October 6 born diva. 👑❤️</p>
+        </div>
+
+        <div class="memory-card">
+            <img src="file_0000000063b882109807487965beb656.png" alt="Aakriti">
+            <p>And yes... still gorgeous. 🙄💖</p>
+        </div>
+
+        <div class="memory-card">
+            <img src="IMG_20261002_203206_478.jpg" alt="Memory">
+            <p>A little memory from our story. 🫶</p>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
 
             <div class="humor-transition">
 
