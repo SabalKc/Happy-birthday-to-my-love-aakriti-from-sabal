@@ -1940,3 +1940,40 @@ p {
         transform: scale(1.03);
     }
 }
+
+/* =========================
+   SONG SECTION
+========================= */
+
+.song-section {
+    margin-top: 35px;
+    padding: 25px 20px;
+    border-radius: 22px;
+    background: rgba(255, 180, 220, 0.08);
+    border: 1px solid rgba(255, 180, 220, 0.25);
+}
+
+.song-intro {
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+}
+
+.song-button {
+    border: none;
+    border-radius: 50px;
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.song-button:active {
+    transform: scale(0.94);
+}
+
+.song-status {
+    margin-top: 15px;
+    font-style: italic;
+    opacity: 0.85;
+}
