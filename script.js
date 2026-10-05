@@ -589,6 +589,10 @@ function handleVote(answer) {
                 I KNEW ITTTT 😭💖🧸
                 <br>
                 My mutuu finally admitted it. 😂❤️
+
+                <button id="finalSurpriseButton" class="final-surprise-button">
+                    WAIT... ONE LAST SURPRISE 👀💖
+                </button>
             </div>
         `;
 
@@ -596,6 +600,10 @@ function handleVote(answer) {
 
         yesButton.disabled = true;
         noButton.disabled = true;
+
+        document
+            .getElementById("finalSurpriseButton")
+            .addEventListener("click", showFinalSurprise);
 
     } else {
 
@@ -614,7 +622,6 @@ function handleVote(answer) {
         }, 700);
     }
 }
-
 
 /* =========================
    REMEMBER PREVIOUS VOTE
@@ -768,4 +775,74 @@ function createExplosionHeart() {
     setTimeout(() => {
         heart.remove();
     }, 1800);
+}
+
+/* =========================
+   FINAL SURPRISE
+========================= */
+
+function showFinalSurprise() {
+
+    const main = document.querySelector(".main-page");
+
+    main.innerHTML = `
+        <div class="love-letter final-surprise-page">
+
+            <div class="surprise-hearts">
+                💖 ✨ 💕 ✨ 💗
+            </div>
+
+            <div class="small-label">
+                JUST ONE MORE THING ❤️
+            </div>
+
+            <h1 class="poem-title">
+                For My Aakriti 🥹💖
+            </h1>
+
+            <div class="surprise-card">
+
+                <div class="surprise-teddy">
+                    🧸
+                </div>
+
+                <p>
+                    If you reached this far...
+                    then I guess you really did
+                    survive all of Sabal's nonsense. 😂
+                </p>
+
+                <p>
+                    I hope this little website
+                    made you smile at least once.
+                    ❤️
+                </p>
+
+                <p>
+                    I didn't want to give you
+                    just another birthday wish.
+                </p>
+
+                <p>
+                    I wanted to give you
+                    something you could actually
+                    keep. 🫶
+                </p>
+
+                <h2>
+                    HAPPY BIRTHDAY, MUTUU 🎂💖
+                </h2>
+
+                <div class="surprise-signature">
+                    — Sabal ❤️
+                </div>
+
+            </div>
+
+            <div class="final-hearts">
+                💖 💕 💗 ❤️ 💐 ✨
+            </div>
+
+        </div>
+    `;
 }
