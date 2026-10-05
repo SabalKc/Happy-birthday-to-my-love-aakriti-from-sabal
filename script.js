@@ -470,8 +470,14 @@ function showMemories() {
 
 function handleVote(answer) {
     const result = document.getElementById("voteResult");
+    const yesButton = document.getElementById("yesButton");
+    const noButton = document.getElementById("noButton");
+    const teddy = document.querySelector(".teddy-bear");
 
     if (answer === "yes") {
+
+        teddy.classList.add("teddy-happy");
+
         result.innerHTML = `
             <div class="vote-response">
                 I KNEW ITTTT 😭💖🧸
@@ -479,23 +485,65 @@ function handleVote(answer) {
                 My mutuu finally admitted it. 😂❤️
             </div>
         `;
+
+        createTeddyHearts();
+
+        yesButton.disabled = true;
+        noButton.disabled = true;
+
     } else {
+
         result.innerHTML = `
             <div class="vote-response">
-                NO?! 😭
+                NICE TRY, MUTUU 😂🧸
                 <br>
-                The teddy is filing a complaint. 🧸💔
+                You can't escape that easily. 💀
             </div>
         `;
+
+        noButton.classList.add("no-dodge");
+
+        setTimeout(() => {
+            noButton.classList.remove("no-dodge");
+        }, 700);
     }
+}
 
-    document
-        .getElementById("yesButton")
-        .disabled = true;
 
-    document
-        .getElementById("noButton")
-        .disabled = true;
+function createTeddyHearts() {
+    const teddy = document.querySelector(".teddy-bear");
+
+    for (let i = 0; i < 18; i++) {
+
+        setTimeout(() => {
+
+            const heart = document.createElement("span");
+
+            heart.className = "teddy-heart";
+
+            heart.textContent =
+                ["💖", "💕", "💗", "❤️", "✨"][
+                    Math.floor(Math.random() * 5)
+                ];
+
+            heart.style.setProperty(
+                "--tx",
+                `${(Math.random() - 0.5) * 220}px`
+            );
+
+            heart.style.setProperty(
+                "--ty",
+                `${-80 - Math.random() * 160}px`
+            );
+
+            teddy.parentElement.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 1400);
+
+        }, i * 70);
+    }
 }
 /* =========================
    LITTLE HEARTS
