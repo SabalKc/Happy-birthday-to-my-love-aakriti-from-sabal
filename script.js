@@ -75,9 +75,35 @@ function showWelcome() {
         .addEventListener("click", enterHeart);
 }
 
-
 function enterHeart() {
     const welcome = document.querySelector(".welcome-screen");
+
+    /* =========================
+       START BIRTHDAY MUSIC 🎵
+    ========================= */
+
+    let music = document.getElementById("birthdayMusic");
+
+    if (!music) {
+        music = document.createElement("audio");
+
+        music.id = "birthdayMusic";
+        music.src = "birthday-song.mp3";
+        music.loop = true;
+        music.volume = 0.45;
+        music.preload = "auto";
+
+        document.body.appendChild(music);
+    }
+
+    music.play().catch(() => {
+        console.log("Music could not start automatically.");
+    });
+
+
+    /* =========================
+       LEAVE WELCOME SCREEN
+    ========================= */
 
     welcome.classList.add("welcome-exit");
 
@@ -86,6 +112,7 @@ function enterHeart() {
         showMainPage();
     }, 800);
 }
+
 
 
 /* =========================
