@@ -369,41 +369,133 @@ function showMemories() {
     const main = document.querySelector(".main-page");
 
     main.innerHTML = `
-        <div class="love-letter memory-page">
+        <div class="love-letter final-poem-page">
 
             <div class="small-label">
-                LITTLE MEMORIES 📸
+                TILL I WILL LIVE ❤️
             </div>
 
             <h1 class="poem-title">
-                Some moments deserve
-                to be remembered. ❤️
+                TILL I WILL LIVE
             </h1>
 
-            <p class="diary-note">
-                This part is still waiting
-                for our memories...
-            </p>
+            <div class="poem final-poem">
 
-            <div class="photo-placeholder">
+                <p>Oh dear Lord, I know you can see</p>
+                <p>Oh dear Lord, I know you can hear</p>
 
-                <div class="placeholder-icon">
-                    📸
-                </div>
+                <p>Oh my Lord, you can speak</p>
+                <p>Oh my Lord, you can judge</p>
 
-                <h2>
-                    Our memories go here
-                </h2>
+                <p>A hundred miles away she is</p>
+                <p>A hundred miles away she is</p>
 
                 <p>
-                    Photos, moments, inside jokes...
-                    we'll fill this part together.
+                    Oh dear Lord, Oh my Lord<br>
+                    Please not make her just my memories
+                </p>
+
+                <p>
+                    Oh my Lord, Oh dear Lord<br>
+                    Please make us both for life
+                </p>
+
+                <p>
+                    A hundred miles, A hundred miles<br>
+                    Oh my Lord, make us for life
+                </p>
+
+                <p>I will sing a song for you</p>
+                <p>I will write a poem for you</p>
+
+                <p>A hundred letters for my love</p>
+                <p>A thousand kisses just for you ❤️</p>
+
+            </div>
+
+            <div class="teddy-intro">
+
+                <p>
+                    Okay... you've reached the actual end now. 🥹
+                </p>
+
+                <p>
+                    But this idiot still has one last question. 😂
                 </p>
 
             </div>
 
+            <div class="teddy-section">
+
+                <div class="teddy-bear">
+                    🧸
+                </div>
+
+                <h2>
+                    U love it mero mutuu? 🥺
+                </h2>
+
+                <div class="vote-buttons">
+
+                    <button id="yesButton">
+                        YES 💖
+                    </button>
+
+                    <button id="noButton">
+                        NO 😭
+                    </button>
+
+                </div>
+
+                <div id="voteResult"></div>
+
+            </div>
+
+            <div class="signature">
+                Written by Sabal J.K for Aakriti Subedhi ❤️
+            </div>
+
         </div>
     `;
+
+    document
+        .getElementById("yesButton")
+        .addEventListener("click", () => handleVote("yes"));
+
+    document
+        .getElementById("noButton")
+        .addEventListener("click", () => handleVote("no"));
+}
+
+
+function handleVote(answer) {
+    const result = document.getElementById("voteResult");
+
+    if (answer === "yes") {
+        result.innerHTML = `
+            <div class="vote-response">
+                I KNEW ITTTT 😭💖🧸
+                <br>
+                My mutuu finally admitted it. 😂❤️
+            </div>
+        `;
+    } else {
+        result.innerHTML = `
+            <div class="vote-response">
+                NO?! 😭
+                <br>
+                The teddy is filing a complaint. 🧸💔
+            </div>
+        `;
+    }
+
+    document
+        .getElementById("yesButton")
+        .disabled = true;
+
+    document
+        .getElementById("noButton")
+        .disabled = true;
 }
 /* =========================
    LITTLE HEARTS
