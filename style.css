@@ -1056,3 +1056,168 @@ p {
 
     line-height: 1.7;
 }
+
+/* =====================================
+   TILL I WILL LIVE
+===================================== */
+
+.final-poem-page {
+    padding-bottom: 100px;
+}
+
+.final-poem {
+    border-color: rgba(255, 190, 220, 0.28);
+}
+
+.final-poem p {
+    font-size: clamp(1.05rem, 4.5vw, 1.35rem);
+}
+
+.teddy-intro {
+    margin-top: 65px;
+    margin-bottom: 30px;
+
+    color: #f2bfd4;
+
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.teddy-section {
+    padding: 35px 20px;
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    border: 1px solid rgba(255, 190, 220, 0.2);
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.teddy-bear {
+    font-size: 6rem;
+
+    margin-bottom: 15px;
+
+    animation: teddyBounce 1.5s ease-in-out infinite;
+}
+
+@keyframes teddyBounce {
+    0%, 100% {
+        transform: translateY(0) rotate(-3deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(3deg);
+    }
+}
+
+.teddy-section h2 {
+    color: #ffd5e6;
+
+    font-size: clamp(1.5rem, 6vw, 2.3rem);
+
+    margin-bottom: 30px;
+}
+
+.vote-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.vote-buttons button {
+    border: none;
+
+    padding: 15px 28px;
+
+    border-radius: 999px;
+
+    font-weight: bold;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+#yesButton {
+    background: #ffb8d7;
+
+    color: #57153d;
+}
+
+#noButton {
+    background: #e7d4df;
+
+    color: #452b3b;
+}
+
+.vote-buttons button:hover {
+    transform: scale(1.08);
+}
+
+.vote-buttons button:active {
+    transform: scale(0.94);
+}
+
+.vote-buttons button:disabled {
+    opacity: 0.55;
+
+    cursor: default;
+}
+
+#voteResult {
+    margin-top: 30px;
+}
+
+.vote-response {
+    color: #ffd3e5;
+
+    font-size: 1.2rem;
+
+    line-height: 1.7;
+
+    animation: voteAppear 0.5s ease;
+}
+
+@keyframes voteAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.signature {
+    margin-top: 75px;
+
+    padding-top: 25px;
+
+    border-top:
+        1px solid rgba(255, 190, 220, 0.15);
+
+    color: #dcaec5;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-style: italic;
+
+    font-size: 0.95rem;
+    }
