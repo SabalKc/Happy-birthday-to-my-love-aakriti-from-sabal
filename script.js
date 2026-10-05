@@ -778,7 +778,7 @@ function createExplosionHeart() {
 }
 
 /* =========================
-   FINAL SURPRISE
+   FINAL SURPRISE + SONG
 ========================= */
 
 function showFinalSurprise() {
@@ -814,8 +814,7 @@ function showFinalSurprise() {
 
                 <p>
                     I hope this little website
-                    made you smile at least once.
-                    ❤️
+                    made you smile at least once. ❤️
                 </p>
 
                 <p>
@@ -833,6 +832,29 @@ function showFinalSurprise() {
                     HAPPY BIRTHDAY, MUTUU 🎂💖
                 </h2>
 
+                <!-- SONG -->
+
+                <div class="song-section">
+
+                    <p class="song-intro">
+                        And now...
+                        one song for you. 🎵❤️
+                    </p>
+
+                    <button id="songButton" class="song-button">
+                        🎵 PLAY THIS SONG FOR ME ❤️
+                    </button>
+
+                    <audio id="birthdaySong" preload="auto">
+                        <source src="our-song.mp3" type="audio/mpeg">
+                    </audio>
+
+                    <p id="songStatus" class="song-status">
+                        Tap the button... 👀
+                    </p>
+
+                </div>
+
                 <div class="surprise-signature">
                     — Sabal ❤️
                 </div>
@@ -845,4 +867,42 @@ function showFinalSurprise() {
 
         </div>
     `;
+
+    const song = document.getElementById("birthdaySong");
+    const songButton = document.getElementById("songButton");
+    const songStatus = document.getElementById("songStatus");
+
+    songButton.addEventListener("click", () => {
+
+        if (song.paused) {
+
+            song.play();
+
+            songButton.innerHTML =
+                "⏸️ PAUSE OUR SONG";
+
+            songStatus.innerHTML =
+                "This one's for you, Aakriti. 🎵❤️";
+
+        } else {
+
+            song.pause();
+
+            songButton.innerHTML =
+                "🎵 PLAY OUR SONG";
+
+            songStatus.innerHTML =
+                "Paused... 🥺";
+        }
+
+    });
+
+    song.addEventListener("ended", () => {
+
+        songButton.innerHTML =
+            "🔁 PLAY IT AGAIN ❤️";
+
+        songStatus.innerHTML =
+            "Okay... one more time? 😂💖";
+    });
 }
