@@ -21,6 +21,11 @@ function handleCakeTap() {
     }
 }
 
+
+/* =========================
+   CAKE UNLOCK
+========================= */
+
 function unlockBirthday() {
     cake.removeEventListener("click", handleCakeTap);
 
@@ -37,6 +42,11 @@ function unlockBirthday() {
         showWelcome();
     }, 1000);
 }
+
+
+/* =========================
+   WELCOME SCREEN
+========================= */
 
 function showWelcome() {
     const welcome = document.createElement("div");
@@ -64,6 +74,7 @@ function showWelcome() {
         .getElementById("enterHeart")
         .addEventListener("click", enterHeart);
 }
+
 
 function enterHeart() {
     const welcome = document.querySelector(".welcome-screen");
@@ -193,57 +204,73 @@ function showKabita() {
                 <p>Mero harek sochma timi nai xau.</p>
 
                 <p>Jindagi le jata tira lagos malai,</p>
-                <p>
                 <p>Mero man le rojney chai timi nai hau. ❤️😭</p>
 
-</div>
+            </div>
 
-<div class="memory-section">
 
-    <h2>A Few Little Memories 📸❤️</h2>
+            <!-- MEMORY GALLERY -->
 
-    <p class="memory-intro">
-        A few pictures of the girl who somehow
-        became one of my favorite parts of life. 🫶
-    </p>
+            <div class="memory-section">
 
-    <div class="memory-gallery">
+                <h2>A Few Little Memories 📸❤️</h2>
 
-        <div class="memory-card">
-            <img src="IMG_20261005_191834.jpg" alt="Aakriti">
-            <p>That beautiful face I could never get tired of seeing. 💗</p>
-        </div>
+                <p class="memory-intro">
+                    A few pictures of the girl who somehow
+                    became one of my favorite parts of life. 🫶
+                </p>
 
-        <div class="memory-card">
-            <img src="IMG_20261005_191714.jpg" alt="Aakriti">
-            <p>Okay... how are you this cute? 😭</p>
-        </div>
+                <div class="memory-gallery">
 
-        <div class="memory-card">
-            <img src="IMG_20261005_191645.jpg" alt="Aakriti">
-            <p>Another little memory worth keeping forever. 🌸</p>
-        </div>
+                    <div class="memory-card">
+                        <img src="IMG_20261005_191834.jpg" alt="Aakriti">
+                        <p>
+                            That beautiful face I could never
+                            get tired of seeing. 💗
+                        </p>
+                    </div>
 
-        <div class="memory-card">
-            <img src="file_00000000e9e481f41f044eb3b7b67ac.png" alt="Aakriti">
-            <p>My October 6 born diva. 👑❤️</p>
-        </div>
+                    <div class="memory-card">
+                        <img src="IMG_20261005_191714.jpg" alt="Aakriti">
+                        <p>
+                            Okay... how are you this cute? 😭
+                        </p>
+                    </div>
 
-        <div class="memory-card">
-            <img src="file_0000000063b882109807487965beb656.png" alt="Aakriti">
-            <p>And yes... still gorgeous. 🙄💖</p>
-        </div>
+                    <div class="memory-card">
+                        <img src="IMG_20261005_191645.jpg" alt="Aakriti">
+                        <p>
+                            Another little memory worth keeping forever. 🌸
+                        </p>
+                    </div>
 
-        <div class="memory-card">
-            <img src="IMG_20261002_203206_478.jpg" alt="Memory">
-            <p>A little memory from our story. 🫶</p>
-        </div>
+                    <div class="memory-card">
+                        <img src="file_00000000e9e481f41f044eb3b7b67ac.png" alt="Aakriti">
+                        <p>
+                            My October 6 born diva. 👑❤️
+                        </p>
+                    </div>
 
-    </div>
+                    <div class="memory-card">
+                        <img src="file_0000000063b882109807487965beb656.png" alt="Aakriti">
+                        <p>
+                            And yes... still gorgeous. 🙄💖
+                        </p>
+                    </div>
 
-</div>
+                    <div class="memory-card">
+                        <img src="IMG_20261002_203206_478.jpg" alt="Memory">
+                        <p>
+                            A little memory from our story. 🫶
+                        </p>
+                    </div>
 
-</div>
+                </div>
+
+            </div>
+
+
+            <!-- HUMOR -->
 
             <div class="humor-transition">
 
@@ -273,6 +300,12 @@ function showKabita() {
         .getElementById("humorButton")
         .addEventListener("click", showHumor);
 }
+
+
+/* =========================
+   HUMOR
+========================= */
+
 function showHumor() {
     const main = document.querySelector(".main-page");
 
@@ -330,6 +363,12 @@ function showHumor() {
         .getElementById("messageButton")
         .addEventListener("click", showFinalMessage);
 }
+
+
+/* =========================
+   FINAL MESSAGE
+========================= */
+
 function showFinalMessage() {
     const main = document.querySelector(".main-page");
 
@@ -411,6 +450,12 @@ function showFinalMessage() {
         .getElementById("memoryButton")
         .addEventListener("click", showMemories);
 }
+
+
+/* =========================
+   TILL I WILL LIVE + TEDDY
+========================= */
+
 function showMemories() {
     const main = document.querySelector(".main-page");
 
@@ -459,6 +504,7 @@ function showMemories() {
 
             </div>
 
+
             <div class="teddy-intro">
 
                 <p>
@@ -470,6 +516,9 @@ function showMemories() {
                 </p>
 
             </div>
+
+
+            <!-- TEDDY -->
 
             <div class="teddy-section">
 
@@ -497,6 +546,9 @@ function showMemories() {
 
             </div>
 
+
+            <!-- SIGNATURE -->
+
             <div class="signature">
                 Written by Sabal J.K for Aakriti Subedhi ❤️
             </div>
@@ -504,21 +556,29 @@ function showMemories() {
         </div>
     `;
 
-    document
-        .getElementById("yesButton")
-        .addEventListener("click", () => handleVote("yes"));
 
-    document
-        .getElementById("noButton")
-        .addEventListener("click", () => handleVote("no"));
+    const yesButton = document.getElementById("yesButton");
+    const noButton = document.getElementById("noButton");
+
+    yesButton.addEventListener("click", () => handleVote("yes"));
+    noButton.addEventListener("click", () => handleVote("no"));
+
+    loadSavedVote();
 }
 
 
+/* =========================
+   VOTE SYSTEM
+========================= */
+
 function handleVote(answer) {
+
     const result = document.getElementById("voteResult");
     const yesButton = document.getElementById("yesButton");
     const noButton = document.getElementById("noButton");
     const teddy = document.querySelector(".teddy-bear");
+
+    localStorage.setItem("aakritiBirthdayVote", answer);
 
     if (answer === "yes") {
 
@@ -556,7 +616,60 @@ function handleVote(answer) {
 }
 
 
+/* =========================
+   REMEMBER PREVIOUS VOTE
+========================= */
+
+function loadSavedVote() {
+
+    const savedVote =
+        localStorage.getItem("aakritiBirthdayVote");
+
+    if (!savedVote) {
+        return;
+    }
+
+    const result = document.getElementById("voteResult");
+    const yesButton = document.getElementById("yesButton");
+    const noButton = document.getElementById("noButton");
+    const teddy = document.querySelector(".teddy-bear");
+
+    if (savedVote === "yes") {
+
+        teddy.classList.add("teddy-happy");
+
+        result.innerHTML = `
+            <div class="vote-response">
+                You already said YES 😭💖🧸
+                <br>
+                I remembered, mutuu. 😂❤️
+            </div>
+        `;
+
+        createTeddyHearts();
+
+        yesButton.disabled = true;
+        noButton.disabled = true;
+
+    } else {
+
+        result.innerHTML = `
+            <div class="vote-response">
+                You chose NO last time. 👀😂
+                <br>
+                The teddy remembers everything. 🧸
+            </div>
+        `;
+    }
+}
+
+
+/* =========================
+   TEDDY HEARTS
+========================= */
+
 function createTeddyHearts() {
+
     const teddy = document.querySelector(".teddy-bear");
 
     for (let i = 0; i < 18; i++) {
@@ -591,11 +704,14 @@ function createTeddyHearts() {
         }, i * 70);
     }
 }
+
+
 /* =========================
    LITTLE HEARTS
 ========================= */
 
 function createTinyHeart() {
+
     const heart = document.createElement("span");
 
     heart.className = "tiny-heart";
@@ -624,6 +740,7 @@ function createTinyHeart() {
 ========================= */
 
 function createExplosionHeart() {
+
     const heart = document.createElement("span");
 
     heart.className = "explosion-heart";
